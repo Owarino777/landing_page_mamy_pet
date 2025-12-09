@@ -45,7 +45,7 @@ export default function HappyCustomers() {
                         {/* Logo Boltshift */}
                         <div className="happy-brand">
                             <Image
-                                src="/Fictional company logo.svg" // mets exactement le nom dans /public
+                                src="/Fictional company logo.svg"
                                 alt="Logo Boltshift"
                                 width={140}
                                 height={40}

@@ -23,7 +23,7 @@ export default function CTA() {
                     <div className="cta-visual">
                         <Image
                             className="cta-visual-image"
-                            src="/image_CTA_1.jpg"
+                            src="/Image_CTA_1.jpg"
                             alt="Image de la section CTA"
                             width={980}
                             height={1259}

@@ -36,7 +36,7 @@ export default function Hero() {
                         <div className="hero-item hero-item--l1">
                             <Image
                                 className="hero-image"
-                                src="/image_hero_1.jpg"
+                                src="/Image_hero_1.jpg"
                                 alt="Illustration d'un pet-sitter avec un chien et un chat"
                                 width={500}
                                 height={400}
@@ -54,7 +54,7 @@ export default function Hero() {
                         <div className="hero-item hero-item--l3">
                             <Image
                                 className="hero-image"
-                                src="/image_hero_3.jpg"
+                                src="/Image_hero_3.jpg"
                                 alt="Illustration d'un pet-sitter avec un chien et un chat"
                                 width={500}
                                 height={400}
@@ -67,7 +67,7 @@ export default function Hero() {
                         <div className="hero-item hero-item--r1">
                             <Image
                                 className="hero-image"
-                                src="/image_hero_4.jpg"
+                                src="/Image_hero_4.jpg"
                                 alt="Illustration d'un pet-sitter avec un chien et un chat"
                                 width={500}
                                 height={400}
@@ -76,7 +76,7 @@ export default function Hero() {
                         <div className="hero-item hero-item--r2">
                             <Image
                                 className="hero-image"
-                                src="/image_hero_5.jpg"
+                                src="/Image_hero_5.jpg"
                                 alt="Illustration d'un pet-sitter avec un chien et un chat"
                                 width={500}
                                 height={400}
