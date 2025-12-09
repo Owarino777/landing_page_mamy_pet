@@ -1,6 +1,6 @@
 /* Features ("Comment ça marche") */
 .features {
-    background-color: #ffffff;
+    background-color: #fcffee;
 }
 
 .features-inner {
@@ -12,58 +12,65 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 2.5rem;
+    align-items: stretch;
+    /* les colonnes étirent les cartes */
 }
 
+/* à partir de 768px on a 3 colonnes, cartes à hauteur égale */
 @media (min-width: 768px) {
     .features-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2rem;
     }
 }
 
+/* carte en flex pour contrôler la hauteur interne */
 .feature-card {
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* s’étire pour remplir la cellule */
+    gap: 0.75rem;
+    /* petit gap vertical interne */
 }
 
-/* Image placeholder */
+/* image : taille fixe (déjà OK) */
 .feature-image-placeholder {
     width: 15rem;
     height: 9.875rem;
     border-radius: 1.5rem;
     overflow: hidden;
     background-color: #e5e7eb;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.75rem;
+    /* réduit pour compenser le gap */
 }
 
-.feature-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-    display: block;
-}
-
-/* Textes */
+/* bloc texte prend la place disponible */
 .feature-title {
     font-size: 0.9375rem;
     line-height: 1.4;
     font-weight: 600;
     color: #020617;
-    margin-bottom: 0.5rem;
+    margin: 0;
 }
 
 .feature-description {
     font-size: 0.8125rem;
     line-height: 1.6;
     color: #4b5563;
-    margin-bottom: 1.25rem;
+    margin: 0;
+    flex: 1 1 auto;
+    /* pousse pour équilibrer la hauteur */
 }
 
-/* Divider bas */
+/* divider collé en bas de la carte */
 .feature-divider {
     display: block;
     width: 100%;
     height: 1px;
-    margin-top: 1rem;
+    margin-top: auto;
+    /* se place en bas */
     background-color: #9ca3af;
     opacity: 0.9;
 }
@@ -128,8 +135,15 @@
         width: 13.5rem;
         height: 9rem;
     }
+
+    /* hauteur cible homogène des cartes */
+    .feature-card {
+        min-height: 18rem;
+        /* ajuste si besoin pour coller Figma */
+    }
 }
 
+/* Mobile L - colonne unique: largeur 100%, pas de décalage */
 @media (min-width: 425px) and (max-width: 767px) {
     .features-inner {
         max-width: 26rem;
@@ -146,14 +160,25 @@
     }
 }
 
-@media (min-width: 375px) and (max-width: 424px) {
-    .feature-image-placeholder {
-        height: 9rem;
-    }
-}
-
+/* Règles globales */
 @media (max-width: 374px) {
     .feature-image-placeholder {
         height: 8.5rem;
     }
+}
+
+/* Fix Next/Image wrapper pour centrage et remplissage */
+.feature-image-placeholder>span {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.feature-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    /* centré dans le cadre */
+    display: block;
 }

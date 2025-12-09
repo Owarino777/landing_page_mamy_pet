@@ -1,6 +1,6 @@
 /* Happy Customers */
 .happy {
-    background-color: #c3e1c0;
+    background-color: #fcffee;
 }
 
 .happy-inner {
@@ -26,7 +26,7 @@
     font-size: 1rem;
     line-height: 1.6;
     font-weight: 400;
-    color: #647488;
+    color: #000;
     margin-bottom: 1.75rem;
 }
 
@@ -56,7 +56,7 @@
     align-items: center;
     gap: 1rem;
     font-size: 0.75rem;
-    color: #647488;
+    color: #111827;
     margin-bottom: 1.75rem;
 }
 

@@ -1,6 +1,6 @@
 /* HERO */
 .hero {
-    background-color: #ffffff;
+    background-color: #fcffee;
     position: relative;
     overflow: hidden;
 }
@@ -72,8 +72,12 @@
 .hero-text {
     font-size: 1.0625rem;
     line-height: 1.7;
-    color: #4b5563;
+    color: #020617;
     margin-bottom: 2rem;
+}
+
+.hero-logo {
+    color: #020617
 }
 
 .hero-actions {
