@@ -1,0 +1,187 @@
+/* Happy Customers */
+.happy {
+    background-color: #c3e1c0;
+}
+
+.happy-inner {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.happy-header {
+    text-align: center;
+    max-width: 36rem;
+    margin: 0 auto 2.5rem;
+}
+
+.happy-title {
+    font-size: 2.625rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 0.75rem;
+}
+
+.happy-subtitle {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #647488;
+    margin-bottom: 1.75rem;
+}
+
+.happy-stars {
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+    font-size: 1rem;
+    color: #000;
+}
+
+.happy-main {
+    max-width: 40rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.happy-main-text {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: #111827;
+    margin-bottom: 1.75rem;
+}
+
+.happy-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.75rem;
+    color: #647488;
+    margin-bottom: 1.75rem;
+}
+
+.happy-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    background-color: #e5e7eb;
+    margin-right: 0.75rem;
+}
+
+.happy-author {
+    text-align: left;
+    flex: 1;
+}
+
+.happy-divider {
+    width: 1px;
+    height: 2.75rem;
+    background-color: rgba(100, 116, 139, 0.5);
+    margin: 0 3rem;
+}
+
+.happy-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.happy-brand img {
+    display: block;
+    height: 1.8rem;
+    width: auto;
+}
+
+.happy-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.happy-nav-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    border: 1px solid #d1d5db;
+    background-color: #f9fafb;
+    color: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.happy-nav-btn--primary {
+    background-color: #111827;
+    border-color: #111827;
+    color: #ffffff;
+}
+
+/* Responsive : meta en colonne sur mobile */
+@media (max-width: 639px) {
+    .happy-meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .happy-divider {
+        width: 100%;
+        height: 1px;
+        margin: 0.75rem 0;
+    }
+
+    .happy-main {
+        text-align: left;
+    }
+
+    .happy-main-text {
+        text-align: justify;
+    }
+}
+
+/* Largeur max aux grands écrans (cohérence avec base breakpoints) */
+@media (min-width: 2560px) {
+    .happy-inner {
+        max-width: 70rem;
+    }
+
+    .happy-main {
+        max-width: 48rem;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 2559px) {
+    .happy-inner {
+        max-width: 64rem;
+    }
+
+    .happy-main {
+        max-width: 44rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .happy-inner {
+        max-width: 60rem;
+    }
+
+    .happy-main {
+        max-width: 40rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .happy-inner {
+        max-width: 40rem;
+    }
+
+    .happy-main {
+        max-width: 36rem;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .happy-inner {
+        max-width: 26rem;
+    }
+}

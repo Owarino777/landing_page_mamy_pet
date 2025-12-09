@@ -1,0 +1,174 @@
+/* CTA final */
+.cta {
+    background-color: #c3e1c0;
+}
+
+.cta-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+    .cta-inner {
+        flex-direction: row;
+        align-items: stretch;
+    }
+}
+
+.cta-content {
+    flex: 1;
+    max-width: 26rem;
+}
+
+.cta-title {
+    font-size: 2.625rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.cta-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #647488;
+    margin-bottom: 1.5rem;
+}
+
+.cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.0625rem;
+    min-height: 2.0625rem;
+    padding: 0.5rem 1.125rem;
+    border-radius: 0.5rem;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.cta-btn--primary {
+    background-color: #020617;
+    color: #ffffff;
+}
+
+.cta-btn--primary:hover {
+    background-color: #0b1120;
+}
+
+.cta-btn--secondary {
+    background-color: transparent;
+    color: #020617;
+    border-color: #020617;
+}
+
+.cta-btn--secondary:hover {
+    background-color: rgba(15, 23, 42, 0.04);
+}
+
+/* bloc visuel à droite */
+.cta-visual-wrap {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cta-visual {
+    width: 100%;
+    max-width: 30rem;
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(99deg, #ffffff 0%, #ffffff 45%, #e5edf9 100%);
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-visual-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+}
+
+/* Ajustements desktop pour coller la baseline Figma */
+@media (min-width: 1024px) {
+    .cta-inner {
+        gap: 2rem;
+    }
+
+    .cta-content {
+        max-width: 26rem;
+    }
+
+    .cta-title {
+        font-size: 2.625rem;
+    }
+
+    .cta-visual {
+        max-width: 30rem;
+    }
+
+    .cta-visual-image {
+        object-fit: contain;
+        object-position: center bottom;
+    }
+}
+
+/* Sur mobile/tablette, passer en cover si besoin */
+@media (max-width: 767px) {
+    .cta-visual-image {
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+/* Breakpoints dimensionnels */
+@media (min-width: 2560px) {
+    .cta-inner {
+        gap: 3rem;
+    }
+
+    .cta-content {
+        max-width: 34rem;
+    }
+
+    .cta-title {
+        font-size: 2.875rem;
+    }
+
+    .cta-visual {
+        max-width: 34rem;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 2559px) {
+    .cta-inner {
+        gap: 2.5rem;
+    }
+
+    .cta-content {
+        max-width: 30rem;
+    }
+
+    .cta-title {
+        font-size: 2.75rem;
+    }
+
+    .cta-visual {
+        max-width: 32rem;
+    }
+}

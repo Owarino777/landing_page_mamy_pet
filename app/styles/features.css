@@ -1,0 +1,159 @@
+/* Features ("Comment ça marche") */
+.features {
+    background-color: #ffffff;
+}
+
+.features-inner {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .features-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.feature-card {
+    text-align: left;
+}
+
+/* Image placeholder */
+.feature-image-placeholder {
+    width: 15rem;
+    height: 9.875rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background-color: #e5e7eb;
+    margin-bottom: 1.25rem;
+}
+
+.feature-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+}
+
+/* Textes */
+.feature-title {
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #020617;
+    margin-bottom: 0.5rem;
+}
+
+.feature-description {
+    font-size: 0.8125rem;
+    line-height: 1.6;
+    color: #4b5563;
+    margin-bottom: 1.25rem;
+}
+
+/* Divider bas */
+.feature-divider {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 1rem;
+    background-color: #9ca3af;
+    opacity: 0.9;
+}
+
+/* Breakpoints dimensionnels */
+@media (min-width: 2560px) {
+    .features-inner {
+        max-width: 80rem;
+    }
+
+    .features-grid {
+        gap: 3rem;
+    }
+
+    .feature-image-placeholder {
+        width: 17rem;
+        height: 11rem;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 2559px) {
+    .features-inner {
+        max-width: 72rem;
+    }
+
+    .features-grid {
+        gap: 2.5rem;
+    }
+
+    .feature-image-placeholder {
+        width: 16rem;
+        height: 10.5rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .features-inner {
+        max-width: 64rem;
+    }
+
+    .features-grid {
+        gap: 2rem;
+    }
+
+    .feature-image-placeholder {
+        width: 15rem;
+        height: 9.875rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .features-inner {
+        max-width: 44rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    .feature-image-placeholder {
+        width: 13.5rem;
+        height: 9rem;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .features-inner {
+        max-width: 26rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .feature-image-placeholder {
+        width: 100%;
+        height: 10rem;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+    .feature-image-placeholder {
+        height: 9rem;
+    }
+}
+
+@media (max-width: 374px) {
+    .feature-image-placeholder {
+        height: 8.5rem;
+    }
+}

@@ -21,13 +21,13 @@ export default function CTA() {
 
                 <div className="cta-visual-wrap">
                     <div className="cta-visual">
-                        {/* placeholder image comme sur Figma */}
                         <Image
                             className="cta-visual-image"
                             src="/image_CTA_1.jpg"
                             alt="Image de la section CTA"
-                            width={300}
-                            height={300}
+                            width={980}
+                            height={1259}
+                            priority
                         />
                     </div>
                 </div>
