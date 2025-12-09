@@ -6,8 +6,9 @@
 .cta-inner {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
-    align-items: flex-start;
+    gap: 2rem;
+    align-items: stretch;
+    /* important pour coller en bas */
 }
 
 @media (min-width: 768px) {
@@ -82,9 +83,12 @@
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    /* ou space-between si besoin */
+    align-items: stretch;
+    /* pour coller en bas */
 }
 
+/* Le bloc visuel : pleine largeur côté droit, coins arrondis */
 .cta-visual {
     width: 100%;
     max-width: 30rem;
@@ -95,29 +99,47 @@
     overflow: hidden;
 }
 
-/* Fix Next/Image wrapper */
+/* Fix du wrapper Next/Image pour qu'il occupe tout l'espace */
 .cta-visual>span {
     display: block;
     width: 100%;
     height: 100%;
 }
 
+/* Image: remplissage du conteneur, accrochée en bas-gauche */
 .cta-visual-image {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    /* ou cover si souhaité */
-    object-position: center bottom;
-    /* desktop: baseline en bas */
+    object-fit: cover;
+    /* remplit le conteneur */
+    object-position: left bottom;
+    /* bas-gauche */
 }
 
-@media (max-width: 767px) {
+/* Desktop: on garde bas-gauche */
+@media (min-width: 1024px) {
+    .cta-visual {
+        max-width: 30rem;
+    }
+
     .cta-visual-image {
         object-fit: cover;
-        object-position: center center;
-        /* mobile: bien centré */
+        object-position: left bottom;
+    }
+}
+
+/* Mobile/tablette: centré si souhaité (sinon conserve bas-gauche) */
+@media (max-width: 767px) {
+    .cta-visual {
+        max-width: 100%;
+    }
+
+    .cta-visual-image {
+        object-fit: cover;
+        object-position: left bottom;
+        /* garde la baseline en bas-gauche */
     }
 }
 
