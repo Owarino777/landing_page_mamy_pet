@@ -1,14 +1,28 @@
 export default function CTA() {
     return (
-        <section className="section-padding bg-black text-white">
-            <div className="container-lg text-center">
-                <h2 className="heading-md mb-6">Prêt à laisser votre animal entre de bonnes mains ?</h2>
-                <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-                    Rejoignez des milliers de propriétaires qui font confiance à Mamy Pet.
-                </p>
-                <button className="btn-primary bg-white text-black hover:bg-gray-100">
-                    Commencer maintenant
-                </button>
+        <section className="section-padding cta">
+            <div className="container-lg cta-inner">
+                <div className="cta-content">
+                    <h2 className="cta-title">Partez l&apos;esprit tranquille dès maintenant</h2>
+                    <p className="cta-text">
+                        Rejoignez les propriétaires qui confient sereinement leur animal à des
+                        pet‑sitters certifiés. Inscription gratuite, sans engagement, en moins de
+                        2 minutes.
+                    </p>
+
+                    <div className="cta-actions">
+                        <button className="cta-btn cta-btn--primary">
+                            Trouver mon pet‑sitter
+                        </button>
+                    </div>
+                </div>
+
+                <div className="cta-visual-wrap">
+                    <div className="cta-visual">
+                        {/* placeholder image comme sur Figma */}
+                        <div className="cta-visual-icon" />
+                    </div>
+                </div>
             </div>
         </section>
     );

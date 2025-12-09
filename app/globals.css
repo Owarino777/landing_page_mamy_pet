@@ -308,7 +308,7 @@ body {
 
 /* Décalages en quinconce – tu ajustes ici */
 .hero-item--l1 {
-  transform: translateY(-15rem);
+  transform: translateY(3rem);
 }
 
 .hero-item--l2 {
@@ -316,13 +316,466 @@ body {
 }
 
 .hero-item--l3 {
-  transform: translateY(21rem);
+  transform: translateY(3rem);
 }
 
 .hero-item--r1 {
-  transform: translateY(-6rem);
+  transform: translateY(3rem);
 }
 
 .hero-item--r2 {
-  transform: translateY(12rem);
+  transform: translateY(3rem);
+}
+
+/* ===================== */
+/* Happy Customers       */
+/* ===================== */
+
+.happy {
+  background-color: #c3e1c0;
+}
+
+.happy-inner {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.happy-header {
+  text-align: center;
+  max-width: 36rem;
+  margin: 0 auto 2.5rem;
+}
+
+.happy-title {
+  font-size: 2.625rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.75rem;
+}
+
+.happy-subtitle {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #647488;
+  margin-bottom: 1.75rem;
+}
+
+.happy-stars {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  font-size: 1rem;
+  color: #000;
+}
+
+/* Bloc principal du témoignage */
+.happy-main {
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.happy-main-text {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #111827;
+  margin-bottom: 1.75rem;
+}
+
+/* Ligne avatar + nom + rôle + logo */
+.happy-meta {
+  display: flex;
+  align-items: center;
+  /* on laisse le flux normal, plus de space-between */
+  gap: 1rem;
+  font-size: 0.75rem;
+  color: #647488;
+  margin-bottom: 1.75rem;
+}
+
+/* avatar + texte occupent la largeur dispo */
+.happy-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  background-color: #e5e7eb;
+  margin-right: 0.75rem;
+}
+
+.happy-author {
+  text-align: left;
+  flex: 1;
+  /* pousse le logo vers la droite */
+}
+
+/* Barre verticale bien centrée entre texte et logo */
+.happy-divider {
+  width: 1px;
+  height: 2.75rem;
+  background-color: rgba(100, 116, 139, 0.5);
+  margin: 0 3rem;
+  /* espace égal des deux côtés */
+}
+
+/* Logo Boltshift un peu plus grand */
+.happy-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.happy-brand img {
+  display: block;
+  height: 1.8rem;
+  /* augmente la taille du logo ici */
+  width: auto;
+}
+
+/* Boutons ronds sous la carte */
+.happy-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.happy-nav-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  border: 1px solid #d1d5db;
+  background-color: #f9fafb;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.happy-nav-btn--primary {
+  background-color: #111827;
+  border-color: #111827;
+  color: #ffffff;
+}
+
+/* Responsive : meta en colonne sur mobile */
+@media (max-width: 639px) {
+  .happy-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .happy-divider {
+    width: 100%;
+    height: 1px;
+    margin: 0.75rem 0;
+  }
+
+  .happy-main {
+    text-align: left;
+  }
+
+  /* texte justifié seulement en mobile */
+  .happy-main-text {
+    text-align: justify;
+  }
+}
+
+/* ===================== */
+/* Features ("Comment ça marche") */
+/* ===================== */
+
+.features {
+  background-color: #ffffff;
+  /* même vert que .happy pour un bloc continu */
+}
+
+.features-inner {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.feature-card {
+  text-align: left;
+}
+
+/* bloc gris en haut (placeholder image) */
+.feature-image-placeholder {
+  width: 100%;
+  width: 15rem;
+  height: 9.875rem;
+  border-radius: 1.25rem;
+  background-color: #e5e7eb;
+  margin-bottom: 1.25rem;
+}
+
+/* titres des cartes */
+.feature-title {
+  font-size: 0.9375rem;
+  /* ~15px */
+  line-height: 1.4;
+  font-weight: 600;
+  color: #020617;
+  margin-bottom: 0.5rem;
+}
+
+/* texte des cartes */
+.feature-description {
+  font-size: 0.8125rem;
+  /* ~13px, comme sur ta maquette */
+  line-height: 1.6;
+  color: #4b5563;
+  margin-bottom: 1.25rem;
+}
+
+/* petite ligne grise en bas de chaque carte */
+.feature-divider {
+  display: block;
+  /* visible même si utilisé sur un <span> */
+  width: 100%;
+  height: 1px;
+  margin-top: 1rem;
+  background-color: #9ca3af;
+  /* gris plus contrasté */
+  opacity: 0.9;
+}
+
+/* ===================== */
+/* FAQ (accordéon)       */
+/* ===================== */
+
+.faq {
+  background-color: #c3e1c0;
+  /* même vert que HappyCustomers */
+}
+
+.faq-inner {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.faq-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.faq-title {
+  font-size: 2.625rem;
+  /* H2 Figma */
+  line-height: 1.2;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 0.75rem;
+}
+
+.faq-subtitle {
+  font-size: 1rem;
+  /* Body Text/Reg */
+  line-height: 1.6;
+  font-weight: 400;
+  color: #647488;
+  /* var(--slate-500) */
+}
+
+/* Liste des questions */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Carte FAQ */
+.faq-item {
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background-color: #f1f5f9;
+  /* #F1F5F9 comme sur Figma */
+  overflow: hidden;
+}
+
+/* Bouton question */
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.25rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.faq-question-text {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #020617;
+  text-align: left;
+}
+
+.faq-question-icon {
+  font-size: 1.25rem;
+  color: #647488;
+}
+
+/* Réponse */
+.faq-answer {
+  padding: 0 1.25rem 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+/* État ouvert : léger fond plus clair si tu veux */
+.faq-item--open {
+  background-color: #ffffff;
+}
+
+/* ===================== */
+/* CTA final             */
+/* ===================== */
+
+.cta {
+  background-color: #c3e1c0;
+  /* même vert que le reste de la page */
+}
+
+.cta-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .cta-inner {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+.cta-content {
+  flex: 1;
+  max-width: 26rem;
+}
+
+.cta-title {
+  font-size: 2.625rem;
+  /* H2 Figma */
+  line-height: 1.2;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.cta-text {
+  font-size: 1rem;
+  /* Body Text/Reg */
+  line-height: 1.6;
+  font-weight: 400;
+  color: #647488;
+  /* slate-500 */
+  margin-bottom: 1.5rem;
+}
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+/* petits boutons comme sur la maquette */
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.0625rem;
+  min-height: 2.0625rem;
+  padding: 0.5rem 1.125rem;
+  border-radius: 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.cta-btn--primary {
+  background-color: #020617;
+  /* slate-950 */
+  color: #ffffff;
+}
+
+.cta-btn--primary:hover {
+  background-color: #0b1120;
+}
+
+.cta-btn--secondary {
+  background-color: transparent;
+  color: #020617;
+  border-color: #020617;
+}
+
+.cta-btn--secondary:hover {
+  background-color: rgba(15, 23, 42, 0.04);
+}
+
+/* bloc visuel à droite */
+.cta-visual-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cta-visual {
+  width: 100%;
+  max-width: 30rem;
+  /* comme dans Figma */
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(99deg,
+      #ffffff 0%,
+      #ffffff 45%,
+      #e5edf9 100%);
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+/* petit pictogramme image au centre (optionnel) */
+.cta-visual-icon {
+  position: absolute;
+  inset: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: translate(-50%, -50%);
+  border-radius: 0.75rem;
+  background-color: rgba(148, 163, 184, 0.18);
+}
+
+/* Images du hero */
+.hero-item {
+  width: 14rem;
+  height: 20rem;
+  border-radius: 1.5rem;
+  border: 2px solid #38bdf8;
+  /* ou la couleur Figma */
+  overflow: hidden;
+}
+
+/* l'image remplit toute la carte, quitte à être recadrée */
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }

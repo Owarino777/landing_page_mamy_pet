@@ -35,6 +35,7 @@ export default function Hero() {
                     <div className="hero-column hero-column--left">
                         <div className="hero-item hero-item--l1">
                             <Image
+                                className="hero-image"
                                 src="/next.svg"
                                 alt="Illustration d'un pet-sitter avec un chien et un chat"
                                 width={500}
@@ -43,6 +44,7 @@ export default function Hero() {
                         </div>
                         <div className="hero-item hero-item--l2">
                             <Image
+                                className="hero-image"
                                 src="/next.svg"
                                 alt="Illustration d'un pet-sitter avec un chien et un chat"
                                 width={500}
@@ -51,6 +53,7 @@ export default function Hero() {
                         </div>
                         <div className="hero-item hero-item--l3">
                             <Image
+                                className="hero-image"
                                 src="/next.svg"
                                 alt="Illustration d'un pet-sitter avec un chien et un chat"
                                 width={500}
@@ -63,6 +66,7 @@ export default function Hero() {
                     <div className="hero-column hero-column--right">
                         <div className="hero-item hero-item--r1">
                             <Image
+                                className="hero-image"
                                 src="/next.svg"
                                 alt="Illustration d'un pet-sitter avec un chien et un chat"
                                 width={500}
@@ -71,6 +75,7 @@ export default function Hero() {
                         </div>
                         <div className="hero-item hero-item--r2">
                             <Image
+                                className="hero-image"
                                 src="/next.svg"
                                 alt="Illustration d'un pet-sitter avec un chien et un chat"
                                 width={500}

@@ -1,35 +1,69 @@
-export default function HappyCustomers() {
-    const testimonials = [
-        {
-            id: 1,
-            text: "Mamy Pet m'a permis de partir en vacances l'esprit tranquille. Mon chat a été très bien traité !",
-            author: "Sarah D.",
-            rating: 5,
-        },
-        {
-            id: 2,
-            text: "Service rapide et fiable. Je recommande vivement !",
-            author: "David P.",
-            rating: 5,
-        },
-    ];
+// filepath: c:\Users\malik\M1_DFS_2025_2026\landing_page_mamy_pet\components\sections\HappyCustomers.tsx
+import Image from "next/image";
 
+export default function HappyCustomers() {
     return (
-        <section className="section-padding bg-white">
-            <div className="container-lg">
-                <h2 className="heading-md text-center mb-12">Clients heureux</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {testimonials.map((testimonial) => (
-                        <div key={testimonial.id} className="p-8 border border-gray-200 rounded-lg">
-                            <div className="flex gap-1 mb-4">
-                                {[...Array(testimonial.rating)].map((_, i) => (
-                                    <span key={i} className="text-yellow-400">★</span>
-                                ))}
-                            </div>
-                            <p className="text-body mb-4">{testimonial.text}</p>
-                            <p className="font-semibold text-gray-900">{testimonial.author}</p>
+        <section className="section-padding happy">
+            <div className="container-lg happy-inner">
+                <header className="happy-header">
+                    <h2 className="happy-title">Happy Customers</h2>
+                    <p className="happy-subtitle">
+                        Rejoignez les propriétaires qui partent l&apos;esprit tranquille grâce à nos pet-sitters formés aux soins médicaux.
+                        Parce que votre animal mérite le meilleur, même en votre absence.
+                    </p>
+                    <div className="happy-stars">
+                        {[...Array(5)].map((_, i) => (
+                            <span key={i}>★</span>
+                        ))}
+                    </div>
+                </header>
+
+                <div className="happy-main">
+                    <p className="happy-main-text">
+                        Mon chat diabétique a besoin d&apos;injections d&apos;insuline deux fois par jour.
+                        J&apos;étais terrifiée à l&apos;idée de partir en vacances. Grâce à Mamipet, j&apos;ai
+                        trouvé Laura, une pet-sitter formée aux soins médicaux. Elle m&apos;envoyait
+                        des photos après chaque injection, et je suis partie l&apos;esprit tranquille
+                        pour la première fois depuis 3 ans !
+                    </p>
+
+                    <div className="happy-meta">
+                        <div className="happy-avatar" />
+
+                        <div className="happy-author">
+                            <p className="happy-author-name">Marie D.</p>
+                            <p className="happy-author-role">
+                                Propriétaire de Milo, chat diabétique
+                                <br />
+                                Pet-sitter certifiée soins médicaux
+                            </p>
                         </div>
-                    ))}
+
+                        {/* Barre verticale */}
+                        <div className="happy-divider" />
+
+                        {/* Logo Boltshift */}
+                        <div className="happy-brand">
+                            <Image
+                                src="/Fictional company logo.svg" // mets exactement le nom dans /public
+                                alt="Logo Boltshift"
+                                width={140}
+                                height={40}
+                            />
+                        </div>
+                    </div>
+
+                    <div className="happy-nav">
+                        <button className="happy-nav-btn" aria-label="Témoignage précédent">
+                            ◀
+                        </button>
+                        <button
+                            className="happy-nav-btn happy-nav-btn--primary"
+                            aria-label="Témoignage suivant"
+                        >
+                            ▶
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>

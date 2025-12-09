@@ -2,35 +2,35 @@ export default function Features() {
     const features = [
         {
             id: 1,
-            title: "Créez votre profil",
-            description: "Inscrivez-vous en quelques minutes et décrivez votre animal.",
-            icon: "📋",
+            title: "Créez votre profil gratuitement",
+            description:
+                "Décrivez votre animal et ses besoins spécifiques en quelques clics. Indiquez les soins médicaux nécessaires pour trouver les bons pet‑sitters.",
         },
         {
             id: 2,
-            title: "Trouvez votre gardien",
-            description: "Parcourez les profils vérifiés des gardiens de confiance.",
-            icon: "🔍",
+            title: "Trouvez votre pet-sitter certifié",
+            description:
+                "Parcourez les profils vérifiés selon vos critères : localisation, compétences médicales, expérience. Comparez les avis et les tarifs.",
         },
         {
             id: 3,
             title: "Réservez en toute sérénité",
-            description: "Planifiez vos séjours en toute tranquillité d'esprit.",
-            icon: "✓",
+            description:
+                "Échangez directement avec votre pet‑sitter, confirmez la réservation et recevez des nouvelles régulières sur les soins de votre animal.",
         },
     ];
 
     return (
-        <section className="section-padding bg-gray-50">
-            <div className="container-lg">
-                <h2 className="heading-md text-center mb-12">Comment ça marche</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <section className="section-padding features">
+            <div className="container-lg features-inner">
+                <div className="features-grid">
                     {features.map((feature) => (
-                        <div key={feature.id} className="text-center p-8">
-                            <div className="text-5xl mb-4">{feature.icon}</div>
-                            <h3 className="font-semibold text-lg mb-2">{feature.title}</h3>
-                            <p className="text-body">{feature.description}</p>
-                        </div>
+                        <article key={feature.id} className="feature-card">
+                            <div className="feature-image-placeholder" />
+                            <h3 className="feature-title">{feature.title}</h3>
+                            <p className="feature-description">{feature.description}</p>
+                            <div className="feature-divider" />
+                        </article>
                     ))}
                 </div>
             </div>
