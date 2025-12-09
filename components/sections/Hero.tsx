@@ -31,13 +31,53 @@ export default function Hero() {
                 </div>
 
                 <div className="hero-visual">
-                    {/* Image ou illustration*/}
-                    <Image
-                        src="/next.svg"
-                        alt="Illustration d'un pet-sitter avec un chien et un chat"
-                        width={500}
-                        height={400}
-                    />
+                    {/* Colonne gauche */}
+                    <div className="hero-column hero-column--left">
+                        <div className="hero-item hero-item--l1">
+                            <Image
+                                src="/next.svg"
+                                alt="Illustration d'un pet-sitter avec un chien et un chat"
+                                width={500}
+                                height={400}
+                            />
+                        </div>
+                        <div className="hero-item hero-item--l2">
+                            <Image
+                                src="/next.svg"
+                                alt="Illustration d'un pet-sitter avec un chien et un chat"
+                                width={500}
+                                height={400}
+                            />
+                        </div>
+                        <div className="hero-item hero-item--l3">
+                            <Image
+                                src="/next.svg"
+                                alt="Illustration d'un pet-sitter avec un chien et un chat"
+                                width={500}
+                                height={400}
+                            />
+                        </div>
+                    </div>
+
+                    {/* Colonne droite */}
+                    <div className="hero-column hero-column--right">
+                        <div className="hero-item hero-item--r1">
+                            <Image
+                                src="/next.svg"
+                                alt="Illustration d'un pet-sitter avec un chien et un chat"
+                                width={500}
+                                height={400}
+                            />
+                        </div>
+                        <div className="hero-item hero-item--r2">
+                            <Image
+                                src="/next.svg"
+                                alt="Illustration d'un pet-sitter avec un chien et un chat"
+                                width={500}
+                                height={400}
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

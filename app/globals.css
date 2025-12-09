@@ -253,6 +253,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1.5rem;
+  transform: rotate(5deg);
+  transform-origin: center;
 }
 
 @media (min-width: 768px) {
@@ -287,4 +290,34 @@ body {
 
 .hero-card--offset {
   transform: translateY(1.5rem);
+}
+
+/* Bloc global qui pivote */
+
+/* Colonnes */
+.hero-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Décalages en quinconce – tu ajustes ici */
+.hero-item--l1 {
+  transform: translateY(-15rem);
+}
+
+.hero-item--l2 {
+  transform: translateY(3rem);
+}
+
+.hero-item--l3 {
+  transform: translateY(21rem);
+}
+
+.hero-item--r1 {
+  transform: translateY(-6rem);
+}
+
+.hero-item--r2 {
+  transform: translateY(12rem);
 }
