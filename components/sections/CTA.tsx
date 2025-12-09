@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function CTA() {
     return (
         <section className="section-padding cta">
@@ -20,7 +22,13 @@ export default function CTA() {
                 <div className="cta-visual-wrap">
                     <div className="cta-visual">
                         {/* placeholder image comme sur Figma */}
-                        <div className="cta-visual-icon" />
+                        <Image
+                            className="cta-visual-image"
+                            src="/image_CTA_1.jpg"
+                            alt="Image de la section CTA"
+                            width={300}
+                            height={300}
+                        />
                     </div>
                 </div>
             </div>

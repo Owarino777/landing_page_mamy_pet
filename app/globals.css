@@ -514,11 +514,13 @@ body {
 
 /* bloc gris en haut (placeholder image) */
 .feature-image-placeholder {
-  width: 100%;
   width: 15rem;
   height: 9.875rem;
-  border-radius: 1.25rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  /* coupe l'image aux bords arrondis */
   background-color: #e5e7eb;
+  /* gris clair derrière l'image */
   margin-bottom: 1.25rem;
 }
 
@@ -767,8 +769,6 @@ body {
   width: 14rem;
   height: 20rem;
   border-radius: 1.5rem;
-  border: 2px solid #38bdf8;
-  /* ou la couleur Figma */
   overflow: hidden;
 }
 
@@ -777,5 +777,16 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
+  /* centre l’image dans le cadre */
+  display: block;
+}
+
+.feature-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  /* idem pour les features */
   display: block;
 }
