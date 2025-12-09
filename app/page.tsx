@@ -1,15 +1,17 @@
-import Image from "next/image";
+import Hero from "@/components/sections/Hero";
+import HappyCustomers from "@/components/sections/HappyCustomers";
+import Features from "@/components/sections/Features";
+import FAQ from "@/components/sections/FAQ";
+import CTA from "@/components/sections/CTA";
 
 export default function Home() {
   return (
-    <main>
-      <h1>Welcome to the Home Page</h1>
-      <Image
-        src="/example-image.jpg"
-        alt="Example Image"
-        width={600}
-        height={400}
-      />
+    <main className="min-h-screen">
+      <Hero />
+      <HappyCustomers />
+      <Features />
+      <FAQ />
+      <CTA />
     </main>
   );
 }
