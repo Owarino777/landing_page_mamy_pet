@@ -150,7 +150,9 @@ body {
 /* HERO */
 .hero {
   background-color: #ffffff;
-  /* provisoire, on ajustera avec ta DA */
+  position: relative;
+  overflow: hidden;
+  /* rien ne peut sortir visuellement du <section class="hero"> */
 }
 
 .hero-inner {
@@ -249,6 +251,7 @@ body {
 }
 
 .hero-visual {
+  position: relative;
   height: 20rem;
   display: flex;
   align-items: center;
@@ -256,6 +259,8 @@ body {
   gap: 1.5rem;
   transform: rotate(5deg);
   transform-origin: center;
+  overflow: hidden;
+  /* coupe ce qui dépasse du bloc d’images */
 }
 
 @media (min-width: 768px) {
