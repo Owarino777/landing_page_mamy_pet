@@ -8,7 +8,6 @@
     flex-direction: column;
     gap: 2rem;
     align-items: stretch;
-    /* important pour coller en bas */
 }
 
 @media (min-width: 768px) {
@@ -68,82 +67,53 @@
     background-color: #0b1120;
 }
 
-.cta-btn--secondary {
-    background-color: transparent;
-    color: #020617;
-    border-color: #020617;
-}
-
-.cta-btn--secondary:hover {
-    background-color: rgba(15, 23, 42, 0.04);
-}
-
 /* bloc visuel à droite */
 .cta-visual-wrap {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    /* ou space-between si besoin */
     align-items: stretch;
-    /* pour coller en bas */
 }
 
-/* Le bloc visuel : pleine largeur côté droit, coins arrondis */
+/* Cadre de l'image : ratio fixe + fond dégradé */
 .cta-visual {
+    position: relative;
     width: 100%;
     max-width: 30rem;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 98 / 125;
+    /* proche de 980x1259 */
     background: linear-gradient(99deg, #ffffff 0%, #ffffff 45%, #e5edf9 100%);
     border-radius: 0.5rem;
-    position: relative;
     overflow: hidden;
 }
 
-/* Fix du wrapper Next/Image pour qu'il occupe tout l'espace */
+/* Wrapper Next/Image : occupe 100% du cadre */
 .cta-visual>span {
     display: block;
-    width: 100%;
-    height: 100%;
-}
-
-/* Image: remplissage du conteneur, accrochée en bas-gauche */
-.cta-visual-image {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
+}
+
+/* Image : remplit TOUJOURS le cadre */
+.cta-visual-image {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    /* remplit le conteneur */
-    object-position: left bottom;
-    /* bas-gauche */
+    object-position: center center;
+    /* ← au lieu de center bottom */
+    display: block;
 }
 
-/* Desktop: on garde bas-gauche */
-@media (min-width: 1024px) {
-    .cta-visual {
-        max-width: 30rem;
-    }
-
-    .cta-visual-image {
-        object-fit: cover;
-        object-position: left bottom;
-    }
-}
-
-/* Mobile/tablette: centré si souhaité (sinon conserve bas-gauche) */
+/* Mobile/tablette : juste largeur max */
 @media (max-width: 767px) {
     .cta-visual {
         max-width: 100%;
     }
-
-    .cta-visual-image {
-        object-fit: cover;
-        object-position: left bottom;
-        /* garde la baseline en bas-gauche */
-    }
 }
 
-/* Ajustements desktop pour coller la baseline Figma */
+/* Ajustements desktop (sans toucher object-fit) */
 @media (min-width: 1024px) {
     .cta-inner {
         gap: 2rem;
@@ -159,19 +129,6 @@
 
     .cta-visual {
         max-width: 30rem;
-    }
-
-    .cta-visual-image {
-        object-fit: contain;
-        object-position: center bottom;
-    }
-}
-
-/* Sur mobile/tablette, passer en cover si besoin */
-@media (max-width: 767px) {
-    .cta-visual-image {
-        object-fit: cover;
-        object-position: center center;
     }
 }
 

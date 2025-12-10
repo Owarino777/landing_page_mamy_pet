@@ -8,7 +8,9 @@ export default function Hero() {
                     <div className="hero-logo">Logo</div>
 
                     <h1 className="hero-title">
-                        Partir sans angoisser
+                        <span className="hero-line1">
+                            Partir sans&nbsp;angoisser
+                        </span>
                         <br />
                         pour votre
                         <br />
@@ -34,7 +36,7 @@ export default function Hero() {
                         <div className="hero-item hero-item--l1">
                             <Image
                                 className="hero-image"
-                                src="/image_hero_1.jpg"
+                                src="/image_hero_1.webp"
                                 alt="Illustration d'un pet-sitter avec un chien et un chat"
                                 width={500}
                                 height={400}
@@ -43,7 +45,7 @@ export default function Hero() {
                         <div className="hero-item hero-item--l2">
                             <Image
                                 className="hero-image"
-                                src="/Image_hero_2.jpg"
+                                src="/image_hero_2.webp"
                                 alt="Illustration d'un pet-sitter avec un chien et un chat"
                                 width={500}
                                 height={400}
@@ -52,7 +54,7 @@ export default function Hero() {
                         <div className="hero-item hero-item--l3">
                             <Image
                                 className="hero-image"
-                                src="/Image_hero_3.jpg"
+                                src="/image_hero_3.webp"
                                 alt="Illustration d'un pet-sitter avec un chien et un chat"
                                 width={500}
                                 height={400}
@@ -65,7 +67,7 @@ export default function Hero() {
                         <div className="hero-item hero-item--r1">
                             <Image
                                 className="hero-image"
-                                src="/Image_hero_4.jpg"
+                                src="/image_hero_4.webp"
                                 alt="Illustration d'un pet-sitter avec un chien et un chat"
                                 width={500}
                                 height={400}
@@ -74,7 +76,7 @@ export default function Hero() {
                         <div className="hero-item hero-item--r2">
                             <Image
                                 className="hero-image"
-                                src="/Image_hero_5.jpg"
+                                src="/image_hero_5.webp"
                                 alt="Illustration d'un pet-sitter avec un chien et un chat"
                                 width={500}
                                 height={400}

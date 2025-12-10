@@ -37,7 +37,7 @@
 }
 
 .hero-content {
-    max-width: 32rem;
+    max-width: 36rem;
 }
 
 .hero-logo {
@@ -53,7 +53,7 @@
     line-height: 1.1;
     font-weight: 700;
     letter-spacing: -0.03em;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     color: #020617;
 }
 
@@ -77,23 +77,6 @@
     margin-bottom: 2rem;
     max-width: 26rem;
     /* largeur confortable */
-}
-
-/* ≤ 1023px : bloc centré, texte justifié */
-@media (max-width: 1023px) {
-    .hero-content {
-        max-width: 36rem;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        /* centre le titre + bouton */
-    }
-
-    .hero-text {
-        text-align: justify;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 
 /* Mobile M + S : texte vraiment centré */
@@ -348,7 +331,7 @@
 /* Tablet ≤ 1023px: centrage du contenu Hero */
 @media (max-width: 1023px) {
     .hero-content {
-        max-width: 36rem;
+        max-width: 40rem;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -397,5 +380,19 @@
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+/* Ligne "Partir sans angoisser" */
+.hero-line1 {
+    display: inline-block;
+    white-space: normal;
+    /* par défaut: peut se couper (Mobile S ≤ 374px) */
+}
+
+/* À partir de 375px: on force tout sur une seule ligne */
+@media (min-width: 375px) {
+    .hero-line1 {
+        white-space: nowrap;
     }
 }

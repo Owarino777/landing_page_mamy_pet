@@ -1,4 +1,3 @@
-// filepath: c:\Users\malik\M1_DFS_2025_2026\landing_page_mamy_pet\components\sections\HappyCustomers.tsx
 import Image from "next/image";
 
 export default function HappyCustomers() {

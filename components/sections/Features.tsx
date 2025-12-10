@@ -5,21 +5,21 @@ export default function Features() {
         {
             id: 1,
             title: "Créez votre profil gratuitement",
-            src: "/Image_feature_1.jpg",
+            src: "/image_feature_1.webp",
             description:
                 "Décrivez votre animal et ses besoins spécifiques en quelques clics. Indiquez les soins médicaux nécessaires pour trouver les bons pet‑sitters.",
         },
         {
             id: 2,
             title: "Trouvez votre pet-sitter certifié",
-            src: "/Image_feature_2.jpg",
+            src: "/image_feature_2.webp",
             description:
                 "Parcourez les profils vérifiés selon vos critères : localisation, compétences médicales, expérience. Comparez les avis et les tarifs.",
         },
         {
             id: 3,
             title: "Réservez en toute sérénité",
-            src: "/Image_feature_3.jpg",
+            src: "/image_feature_3.webp",
             description:
                 "Échangez directement avec votre pet‑sitter, confirmez la réservation et recevez des nouvelles régulières sur les soins de votre animal.",
         },
