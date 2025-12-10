@@ -6,7 +6,7 @@
 }
 
 .hero-inner {
-    max-width: 72rem;
+    max-width: 76rem;
     margin-left: auto;
     margin-right: auto;
     padding-top: 2.5rem;
@@ -111,7 +111,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
     transform: rotate(5deg);
     transform-origin: center;
     overflow: hidden;
@@ -132,7 +132,7 @@
 .hero-column {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 /* Tailles et recadrage des cartes */
@@ -175,23 +175,23 @@
 /* Quinconce contrôlé aux écrans ≥ 1024px */
 @media (min-width: 1024px) {
     .hero-item--l1 {
-        transform: translateY(-2rem);
+        transform: translateY(3rem);
     }
 
     .hero-item--l2 {
-        transform: translateY(1rem);
+        transform: translateY(3rem);
     }
 
     .hero-item--l3 {
-        transform: translateY(3.5rem);
+        transform: translateY(3rem);
     }
 
     .hero-item--r1 {
-        transform: translateY(0.5rem);
+        transform: translateY(3rem);
     }
 
     .hero-item--r2 {
-        transform: translateY(2.5rem);
+        transform: translateY(3rem);
     }
 }
 
@@ -320,32 +320,68 @@
     }
 }
 
+/* Mobile M: 375–424px → centre le paragraphe */
 @media (min-width: 375px) and (max-width: 424px) {
-    .hero-title {
-        font-size: 2rem;
-    }
-
-    .hero-visual {
-        height: 18rem;
-    }
-
-    .hero-item {
-        width: 10rem;
-        height: 15rem;
+    .hero-text {
+        text-align: center;
+        /* centre le texte */
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
+/* Mobile S: ≤374px → centre le paragraphe */
 @media (max-width: 374px) {
+    .hero-text {
+        text-align: center;
+        /* centre le texte */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Tablet ≤ 1023px: centrage du contenu Hero */
+@media (max-width: 1023px) {
+    .hero-content {
+        max-width: 36rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        /* centre le titre et le bouton */
+    }
+
     .hero-title {
-        font-size: 1.875rem;
+        text-align: center;
     }
 
-    .hero-visual {
-        height: 16rem;
+    .hero-text {
+        text-align: justify;
+        /* texte justifié */
+        margin-left: auto;
+        /* garde au centre du conteneur */
+        margin-right: auto;
     }
 
-    .hero-item {
-        width: 9rem;
-        height: 14rem;
+    .hero-actions {
+        justify-content: center;
+        /* centre le bouton dans la ligne */
+        align-items: center;
+    }
+}
+
+/* Mobile ≤ 768px: mêmes règles, on renforce le centrage */
+@media (max-width: 768px) {
+    .hero-content {
+        max-width: 28rem;
+    }
+
+    .hero-text {
+        text-align: justify;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        /* empile proprement si besoin */
+        gap: 0.75rem;
     }
 }
