@@ -17,9 +17,7 @@ export default function Hero() {
 
                     <p className="hero-text">
                         Des pet-sitters formés aux soins médicaux pour
-                        <br />
                         que vous partiez l&apos;esprit tranquille. Compétences
-                        <br />
                         vérifiées + assurance incluse.
                     </p>
 

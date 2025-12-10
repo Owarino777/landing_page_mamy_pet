@@ -69,15 +69,40 @@
     }
 }
 
+/* paragraphe par défaut */
 .hero-text {
     font-size: 1.0625rem;
     line-height: 1.7;
     color: #020617;
     margin-bottom: 2rem;
+    max-width: 26rem;
+    /* largeur confortable */
 }
 
-.hero-logo {
-    color: #020617
+/* ≤ 1023px : bloc centré, texte justifié */
+@media (max-width: 1023px) {
+    .hero-content {
+        max-width: 36rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        /* centre le titre + bouton */
+    }
+
+    .hero-text {
+        text-align: justify;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Mobile M + S : texte vraiment centré */
+@media (max-width: 424px) {
+    .hero-text {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .hero-actions {
