@@ -320,26 +320,6 @@
     }
 }
 
-/* Mobile M: 375–424px → centre le paragraphe */
-@media (min-width: 375px) and (max-width: 424px) {
-    .hero-text {
-        text-align: center;
-        /* centre le texte */
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-/* Mobile S: ≤374px → centre le paragraphe */
-@media (max-width: 374px) {
-    .hero-text {
-        text-align: center;
-        /* centre le texte */
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
 /* Tablet ≤ 1023px: centrage du contenu Hero */
 @media (max-width: 1023px) {
     .hero-content {
@@ -383,5 +363,14 @@
         flex-direction: column;
         /* empile proprement si besoin */
         gap: 0.75rem;
+    }
+}
+
+/* Mobile M + Mobile S : texte du paragraphe centré */
+@media (max-width: 424px) {
+    .hero-text {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
