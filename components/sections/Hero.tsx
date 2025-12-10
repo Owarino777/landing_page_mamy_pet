@@ -9,7 +9,8 @@ export default function Hero() {
 
                     <h1 className="hero-title">
                         <span className="hero-line1">
-                            Partir sans&nbsp;angoisser
+                            Partir sans&nbsp;
+                            <span className="hero-word-angoisser">angoisser</span>
                         </span>
                         <br />
                         pour votre

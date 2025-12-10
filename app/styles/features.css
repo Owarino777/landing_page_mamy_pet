@@ -160,10 +160,50 @@
     }
 }
 
-/* Règles globales */
+/* Mobile S : image + titre centrés, description à gauche */
 @media (max-width: 374px) {
+    .feature-card {
+        align-items: center;
+        /* centre le contenu dans la carte */
+    }
+
     .feature-image-placeholder {
         height: 8.5rem;
+        margin-left: auto;
+        /* centre l'image */
+        margin-right: auto;
+    }
+
+    .feature-title {
+        text-align: center;
+        /* titre centré */
+    }
+
+    .feature-description {
+        text-align: left;
+        /* description alignée à gauche */
+        width: 100%;
+    }
+}
+
+/* Mobile M et L : même comportement que S */
+@media (min-width: 375px) and (max-width: 767px) {
+    .feature-card {
+        align-items: center;
+    }
+
+    .feature-image-placeholder {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .feature-title {
+        text-align: center;
+    }
+
+    .feature-description {
+        text-align: left;
+        width: 100%;
     }
 }
 
@@ -179,6 +219,5 @@
     height: 100%;
     object-fit: cover;
     object-position: center center;
-    /* centré dans le cadre */
     display: block;
 }

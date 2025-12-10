@@ -38,6 +38,10 @@
 
 .hero-content {
     max-width: 36rem;
+    position: relative;
+    /* nouveau */
+    z-index: 1;
+    /* le texte passe au-dessus */
 }
 
 .hero-logo {
@@ -123,6 +127,8 @@
     transform: rotate(5deg);
     transform-origin: center;
     overflow: hidden;
+    z-index: 0;
+    /* nouveau */
 }
 
 @media (min-width: 768px) {
@@ -211,7 +217,7 @@
     }
 
     .hero-title {
-        font-size: 4.25rem;
+        font-size: 3.75rem;
     }
 
     .hero-text {
@@ -251,7 +257,8 @@
 @media (min-width: 1024px) and (max-width: 1439px) {
     .hero-inner {
         grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-        gap: 2.5rem;
+        gap: 4rem;
+        /* au lieu de 2.5rem, plus d'espace entre texte et images */
     }
 
     .hero-title {
@@ -386,13 +393,45 @@
 /* Ligne "Partir sans angoisser" */
 .hero-line1 {
     display: inline-block;
-    white-space: normal;
-    /* par défaut: peut se couper (Mobile S ≤ 374px) */
 }
 
-/* À partir de 375px: on force tout sur une seule ligne */
-@media (min-width: 375px) {
+.hero-word-angoisser {
+    display: inline;
+}
+
+/* Mobile M + L + Tablet < 1024px : garder tout sur une seule ligne */
+@media (min-width: 375px) and (max-width: 1023px) {
     .hero-line1 {
         white-space: nowrap;
+    }
+}
+
+/* Mobile M uniquement : on resserre un peu l'espace entre les mots */
+@media (min-width: 375px) and (max-width: 424px) {
+    .hero-line1 {
+        word-spacing: -0.15em;
+    }
+}
+
+/* Laptop 1024–1439px : retour à la ligne avant "angoisser" */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .hero-line1 {
+        white-space: normal;
+    }
+
+    .hero-word-angoisser {
+        display: block;
+        /* "angoisser" sur la ligne suivante */
+    }
+}
+
+/* ≥1440px : tout sur une seule ligne à nouveau */
+@media (min-width: 1440px) {
+    .hero-line1 {
+        white-space: nowrap;
+    }
+
+    .hero-word-angoisser {
+        display: inline;
     }
 }
