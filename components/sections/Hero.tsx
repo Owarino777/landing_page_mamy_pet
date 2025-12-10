@@ -36,7 +36,7 @@ export default function Hero() {
                         <div className="hero-item hero-item--l1">
                             <Image
                                 className="hero-image"
-                                src="/Image_hero_1.jpg"
+                                src="/image_hero_1.jpg"
                                 alt="Illustration d'un pet-sitter avec un chien et un chat"
                                 width={500}
                                 height={400}
