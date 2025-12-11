@@ -4,33 +4,6 @@ export default function Hero() {
     return (
         <section className="hero">
             <div className="hero-inner">
-                <div className="hero-content">
-                    <div className="hero-logo">Logo</div>
-
-                    <h1 className="hero-title">
-                        <span className="hero-line1">
-                            Partir sans&nbsp;
-                            <span className="hero-word-angoisser">angoisser</span>
-                        </span>
-                        <br />
-                        pour votre
-                        <br />
-                        animal
-                    </h1>
-
-                    <p className="hero-text">
-                        Des pet-sitters formés aux soins médicaux pour
-                        que vous partiez l&apos;esprit tranquille. Compétences
-                        vérifiées + assurance incluse.
-                    </p>
-
-                    <div className="hero-actions">
-                        <button className="hero-primary-btn">
-                            Trouvez votre pet-sitter
-                        </button>
-                    </div>
-                </div>
-
                 <div className="hero-visual">
                     {/* Colonne gauche */}
                     <div className="hero-column hero-column--left">
@@ -85,6 +58,35 @@ export default function Hero() {
                         </div>
                     </div>
                 </div>
+
+                <div className="hero-content">
+                    <div className="hero-logo">Logo</div>
+
+                    <h1 className="hero-title">
+                        <span className="hero-line1">
+                            Partir sans&nbsp;
+                            <span className="hero-word-angoisser">angoisser</span>
+                        </span>
+                        <br />
+                        pour votre
+                        <br />
+                        animal
+                    </h1>
+
+                    <p className="hero-text">
+                        Des pet-sitters formés aux soins médicaux pour
+                        que vous partiez l&apos;esprit tranquille. Compétences
+                        vérifiées + assurance incluse.
+                    </p>
+
+                    <div className="hero-actions">
+                        <button className="hero-primary-btn">
+                            Trouvez votre pet-sitter
+                        </button>
+                    </div>
+                </div>
+
+
             </div>
         </section>
     );
