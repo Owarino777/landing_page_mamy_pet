@@ -23,7 +23,7 @@
 }
 
 .cta-title {
-    font-size: 2.625rem;
+    font-size: 2.725rem;
     line-height: 1.2;
     font-weight: 700;
     color: #000000;
@@ -31,11 +31,12 @@
 }
 
 .cta-text {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.350rem;
+    line-height: 1.7;
     font-weight: 400;
-    color: #647488;
+    color: #020617;
     margin-bottom: 1.5rem;
+    max-width: 26rem;
 }
 
 .cta-actions {
@@ -45,26 +46,24 @@
 }
 
 .cta-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.0625rem;
-    min-height: 2.0625rem;
-    padding: 0.5rem 1.125rem;
-    border-radius: 0.5rem;
-    font-size: 0.8125rem;
-    font-weight: 500;
-    cursor: pointer;
-    border: 1px solid transparent;
+    background-color: #FF97FD;
+    font-size: large;
+    font-weight: 700;
+    color: #020617;
+    font-size: 1.400rem;
+    border-radius: 1rem;
+    padding-inline: 2.75rem;
+    padding-block: 0.75rem;
 }
 
 .cta-btn--primary {
-    background-color: #020617;
-    color: #ffffff;
+    background-color: #FF97FD;
+    color: #020617;
 }
 
 .cta-btn--primary:hover {
-    background-color: #0b1120;
+    background-color: #020617;
+    color: #ffffff;
 }
 
 /* bloc visuel à droite */

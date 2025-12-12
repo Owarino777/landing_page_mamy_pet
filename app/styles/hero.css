@@ -75,12 +75,11 @@
 
 /* paragraphe par défaut */
 .hero-text {
-    font-size: 1.0625rem;
+    font-size: 1.350rem;
     line-height: 1.7;
     color: #020617;
     margin-bottom: 2rem;
     max-width: 26rem;
-    /* largeur confortable */
 }
 
 /* Mobile M + S : texte vraiment centré */
@@ -105,15 +104,19 @@
 }
 
 .hero-primary-btn {
-    background-color: #111827;
-    color: #ffffff;
-    border-radius: 0.10rem;
+    background-color: #FF97FD;
+    font-size: large;
+    color: #020617;
+    font-weight: 700;
+    font-size: 1.400rem;
+    border-radius: 1rem;
     padding-inline: 2.75rem;
     padding-block: 0.75rem;
 }
 
 .hero-primary-btn:hover {
     background-color: #020617;
+    color: #ffffff;
 }
 
 /* Bloc d’images pivoté */
