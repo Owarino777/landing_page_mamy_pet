@@ -75,7 +75,7 @@
 
 /* paragraphe par défaut */
 .hero-text {
-    font-size: 1.300rem;
+    font-size: 1.0625rem;
     line-height: 1.7;
     color: #020617;
     margin-bottom: 2rem;
@@ -105,9 +105,8 @@
 }
 
 .hero-primary-btn {
-    background-color: #F8704B;
-    color: #020617;
-    font-size: 1.375rem;
+    background-color: #111827;
+    color: #ffffff;
     border-radius: 0.10rem;
     padding-inline: 2.75rem;
     padding-block: 0.75rem;
