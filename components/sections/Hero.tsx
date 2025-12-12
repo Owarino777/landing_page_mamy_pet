@@ -3,7 +3,18 @@ import Image from "next/image";
 export default function Hero() {
     return (
         <section className="hero">
+            <div className="hero-logo">
+                <Image
+                    className="hero-logo-img"
+                    src="/logo%20mamipet.svg"
+                    alt="Logo Mamipet"
+                    width={200}
+                    height={60}
+                    priority
+                />
+            </div>
             <div className="hero-inner">
+
                 <div className="hero-visual">
                     {/* Colonne gauche */}
                     <div className="hero-column hero-column--left">
@@ -60,7 +71,7 @@ export default function Hero() {
                 </div>
 
                 <div className="hero-content">
-                    <div className="hero-logo">Logo</div>
+
 
                     <h1 className="hero-title">
                         <span className="hero-line1">
