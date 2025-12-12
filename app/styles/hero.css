@@ -214,11 +214,11 @@
     }
 
     .hero-item--r1 {
-        transform: translateY(3rem);
+        transform: translateY(-3rem);
     }
 
     .hero-item--r2 {
-        transform: translateY(3rem);
+        transform: translateY(-3rem);
     }
 }
 
